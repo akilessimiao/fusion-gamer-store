@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fusion Gamer Store</title>
+  <meta name="description" content="Fusion Gamer Store — setups e acessórios gamers acessíveis com curadoria High Fusion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Fusion Gamer Store" />
+  <meta property="og:description" content="A loja que funde preço bom com setup estiloso." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta name="theme-color" content="#0a0d1a" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Fusion Gamer Store" class="logo" />
+      <div>
+        <h1>Fusion Gamer Store</h1>
+        <p class="tagline">Inspirado na linha High Fusion — crie seu avatar e seu setup.</p>
+      </div>
+    </div>
+
+    <nav class="actions">
+      <input id="search" type="search" placeholder="Buscar produto, categoria ou código..." />
+      <select id="category">
+        <option value="">Todas as categorias</option>
+      </select>
+      <a class="btn whatsapp" target="_blank" rel="noopener"
+         href="https://wa.me/5584991070984?text=Ol%C3%A1%20Fusion%20Gamer%20Store!%20Quero%20montar%20meu%20setup.">
+        Fale no WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="grid" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Fusion Gamer Store • Catálogo baseado em produtos Clanm.</p>
+    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <template id="card-tpl">
+    <article class="card">
+      <img class="thumb" alt="" />
+      <div class="info">
+        <h3 class="title"></h3>
+        <p class="meta"></p>
+      </div>
+      <div class="cta">
+        <a class="btn outline" target="_blank" rel="noopener">Ver detalhes</a>
+        <a class="btn whatsapp" target="_blank" rel="noopener">Comprar no WhatsApp</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

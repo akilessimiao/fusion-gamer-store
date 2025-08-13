@@ -1,0 +1,28 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#0a0d1a;color:#e6e8ee;font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto}
+.container{max-width:1120px;margin:0 auto;padding:16px}
+.header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:16px}
+.logo{width:72px;height:72px;border-radius:20px;box-shadow:0 6px 18px rgba(0,0,0,.35);object-fit:cover;background:#0f1428}
+h1{margin:0;font-size:26px;line-height:1.1;font-weight:800;letter-spacing:.5px}
+.tagline{margin:2px 0 0 0;color:#99a3c3;font-weight:600}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+input[type="search"], select{background:#0f1428;color:#e6e8ee;border:1px solid #1d2341;border-radius:14px;padding:10px 14px;outline:none;min-width:240px}
+.btn{display:inline-block;padding:10px 14px;border-radius:14px;border:none;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.btn.whatsapp{background:#25D366;color:#061b10}
+.btn.outline{border:1px solid #2a315a;background:transparent;color:#e6e8ee}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:16px}
+.card{background:#0f1428;border:1px solid #1d2341;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-height:320px}
+.thumb{width:100%;height:160px;object-fit:cover;background:#0a0d1a}
+.info{padding:12px 12px 0}
+.title{margin:0 0 6px 0;font-size:16px}
+.meta{margin:0;color:#99a3c3;font-size:13px}
+.cta{display:flex;gap:8px;padding:12px;margin-top:auto}
+.footer{display:flex;justify-content:space-between;align-items:center;color:#99a3c3}
+.footer a{color:#99a3c3}
+@media (prefers-color-scheme: light){
+  body{background:#ffffff;color:#10121a}
+  .tagline,.footer{color:#3a4266}
+  input[type="search"], select{background:#f2f4ff;color:#10121a;border-color:#d6dcff}
+  .card{background:#ffffff;border-color:#e6e9ff}
+  .btn.outline{color:#10121a;border-color:#cfd6ff}
+}
